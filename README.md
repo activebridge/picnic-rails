@@ -70,5 +70,5 @@ $picnic-success: green;
 
 ## You're in good company
 
-[picinc]: https://github.com/picnicss/picnic
-[autoprefixer]: https://github.com/ai/autoprefixer
+[picinc](https://github.com/picnicss/picnic)
+[autoprefixer](https://github.com/ai/autoprefixer)
