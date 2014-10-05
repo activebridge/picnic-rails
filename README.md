@@ -38,6 +38,7 @@ Do not use `//= require` in Sass or your other stylesheets will not be [able to 
 * [picinc.scss](/app/assets/stylesheets/picnic.scss) - main project Sass file, imports Picnic and variables.
 
 ```scss
+@import 'picinc/variables';
 @import 'picinc/checkbox';
 @import 'picinc/select';
 ```
