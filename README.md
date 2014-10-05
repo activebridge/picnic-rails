@@ -35,7 +35,12 @@ $ rm app/assets/stylesheets/application.css
 Do not use `//= require` in Sass or your other stylesheets will not be [able to access][antirequire] the Picinc variables.
 
 
-* [variables.scss](/app/assets/stylesheets/picnic.scss) - main project Sass file, imports Picnic and variables.
+* [picinc.scss](/app/assets/stylesheets/picnic.scss) - main project Sass file, imports Picnic and variables.
+
+```scss
+@import 'picinc/checkbox';
+@import 'picinc/select';
+```
 
 ### Configuration
 
