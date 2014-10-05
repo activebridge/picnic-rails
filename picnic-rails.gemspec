@@ -5,8 +5,9 @@ Gem::Specification.new do |s|
   s.name          = 'picnic-rails'
   s.version       = Picnic::Rails::VERSION
   s.authors       = ['Alex Galushka']
+  s.licenses      = ['MIT']
   s.email         = ['galulex@gmail.com']
-  s.homepage      = 'https://github.com/galulex/lazybox'
+  s.homepage      = 'http://picnicss.com'
   s.summary       = 'Picnic CSS for Rails'
   s.description   = 'Unpack your meal and get coding. An invasive CSS library to get your style started.'
   s.platform      = Gem::Platform::RUBY
