@@ -1,0 +1,46 @@
+.select {
+    display: inline-block;
+    position: relative;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: $picnic-radius;
+}
+
+.select:after {
+    padding: 1.2% 0 0 0;
+    background: $picnic-white;
+    content: "\25BC";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 2.3em;
+    pointer-events: none;
+    font-size: .8em;
+    line-height:2.3em;
+    text-align: center;
+    border-radius: $picnic-radius;
+}
+
+.select select {
+    padding:0.23em 0 0.23em 0.23em;
+    background: none;
+    //vendor prefixes required, see:
+    //https://github.com/postcss/autoprefixer#why-doesnt-autoprefixer-support-appearance
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    min-width: 14em;
+    border-radius: $picnic-radius;
+    cursor: pointer;
+}
+
+.select select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 $picnic-black;
+}
+
+.select select option {
+    padding: .2em .5em;
+}

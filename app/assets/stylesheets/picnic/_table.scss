@@ -1,0 +1,34 @@
+table {
+    text-align: left;
+}
+
+td,th {
+    padding: $picnic-padding 2.4em $picnic-padding $picnic-padding * 2;
+}
+
+th {
+    font-weight: 900;
+    color: $picnic-white;
+    background-color: $picnic-primary;
+}
+
+.success th {
+    background-color: $picnic-success;
+}
+
+.warning th {
+    background-color: $picnic-warning;
+}
+
+.error th {
+    background-color: $picnic-error;
+}
+
+.dull th {
+    background-color: $picnic-dull;
+}
+
+
+tr:nth-child(even) {
+    background: rgba(0,0,0,.05);
+}

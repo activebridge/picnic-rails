@@ -1,0 +1,46 @@
+/* Browser treats unknow type as "text", so we'll do the same */
+input {
+    line-height: $picnic-text-height;
+    margin: $picnic-margin;
+    padding: $picnic-padding-text;
+    border: $picnic-border;
+    border-radius: $picnic-radius;
+    transition: $picnic-transition-slow;
+}
+
+input[type=file],
+input[type=color] {
+    padding: $picnic-padding;
+    cursor: pointer;
+}
+
+input:focus,
+input[type=file]:hover,
+input[type=color]:hover,
+input:invalid:focus,
+.select select:focus,
+.select select:hover {
+    border-color: $picnic-light-primary;
+    transition: $picnic-transition-slow;
+
+    @if $picnic-deep == true {
+        box-shadow: .1em .1em 0 $picnic-dark-overlay;
+    }
+}
+
+/* Validation */
+input:invalid {
+    border-color: $picnic-warning;
+    box-shadow: none;
+}
+
+input:focus:invalid {
+    border-color: $picnic-error;
+}
+
+/* Reset the style for those that we actually know */
+input[type=radio]:focus,
+input[type=checkbox]:focus {
+    box-shadow: none;
+    border-color: initial;
+}
