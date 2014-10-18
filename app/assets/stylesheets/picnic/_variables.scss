@@ -36,4 +36,45 @@ $picnic-soft-dark-overlay: rgba(0, 0, 0, .1) !default;
 $picnic-clear-overlay: rgba(255, 255, 255, .3) !default;
 
 /* Border */
-$picnic-border: 1px solid $picnic-dark-overlay !default;
+$picnic-border-color: $picnic-dull !default;
+$picnic-border-weight: 1px !default;
+$picnic-border: $picnic-border-weight solid $picnic-border-color;
+
+// Link
+$link-color:            $picnic-primary !default;
+$link-text-decoration:  none !default;
+
+// Input
+$input-background:                  $picnic-white !default;
+$input-border-color:                $picnic-border-color !default;
+$input-border-radius:               $picnic-radius !default;
+$input-border-weight:               $picnic-border-weight !default;
+$input-border:                      $input-border-weight solid $input-border-color !default;
+$input-color:                       $picnic-black !default;
+$input-focus-border-color:          $picnic-aqua !default;
+$input-invalid-border-color:        $picnic-warning !default;
+$input-invalid-focus-border-color:  $picnic-error !default;
+$input-line-height:                 $picnic-text-height !default;
+$input-margin:                      $picnic-margin !default;
+$input-padding:                     $picnic-padding-text !default;
+$input-transition:                  border-color .3s !default;
+
+// Select
+$select-arrow-color:                $picnic-black !default;
+$select-background:                 $picnic-white !default;
+$select-border-color:               $picnic-border-color !default;
+$select-border-radius:              $picnic-radius !default;
+$select-border-weight:              $picnic-border-weight !default;
+$select-border:                     $select-border-weight solid $select-border-color !default;
+$select-color:                      $picnic-black !default;
+$select-font-size:                  inherit !default;
+$select-margin:                     $picnic-margin !default;
+$select-padding:                    $picnic-padding !default;
+
+// Checkbox
+$checkbox-border-color:             $picnic-border-color !default;
+$checkbox-border-radius:            $picnic-radius !default;
+$checkbox-border-weight:            $picnic-border-weight !default;
+$checkbox-border:                   $checkbox-border-weight solid $checkbox-border-color !default;
+$checkbox-color:                    $picnic-black;
+$checkbox-focus-border-color:       $picnic-aqua !default;

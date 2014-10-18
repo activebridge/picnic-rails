@@ -15,16 +15,18 @@ a.button:visited,
     color: $picnic-white;
     border-radius: $picnic-radius;
     cursor: pointer;
-    transition: $picnic-transition-fast;
     margin: $picnic-margin;
     padding: $picnic-padding $picnic-padding * 3;
+    transition: $picnic-transition-fast;
 
     @if $picnic-deep == true {
         height: $picnic-text-height - .2em;
         line-height: $picnic-text-height;
         padding: $picnic-padding $picnic-padding * 3 $picnic-padding + .2em;
         margin: $picnic-margin $picnic-margin $picnic-margin;
-        box-shadow: inset 0 -.2em $picnic-dark-overlay;
+        box-shadow:
+          inset 0 0 0 100em transparent,
+          inset 0 -.2em $picnic-dark-overlay;
     }
 }
 
@@ -36,13 +38,15 @@ a.button:visited,
 .toggle:hover input + *,
 .toggle input:focus + * {
     color: $picnic-white;
-    transition: all .1s ease;
+    transition: all .1s ease, box-shadow 0s ease;
     box-shadow: inset 0 0 0 100em $picnic-soft-dark-overlay;
 
     @if $picnic-deep == true {
         margin: $picnic-margin + .1em $picnic-margin $picnic-margin;
         padding: $picnic-padding $picnic-padding * 3 $picnic-padding + .1em;
-        box-shadow: inset 0 -.1em $picnic-dark-overlay;
+        box-shadow:
+          inset 0 0 0 1000em $picnic-soft-dark-overlay,
+          inset 0 -.1em $picnic-dark-overlay;
     }
 }
 
@@ -54,7 +58,9 @@ a.button:visited,
     @if $picnic-deep == true {
         margin: $picnic-margin + .2em $picnic-margin $picnic-margin;
         padding: $picnic-padding $picnic-padding * 3;
-        box-shadow: inset 0 .1em .1em $picnic-dark-overlay;
+        box-shadow:
+          inset 0 0 0 1000em $picnic-dark-overlay,
+          inset 0 .1em .1em $picnic-dark-overlay;
     }
 }
 

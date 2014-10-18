@@ -1,0 +1,52 @@
+.radio, .checkbox {
+  position: relative;
+  display: inline-block;
+  margin: $input-margin;
+  outline: 0px none;
+  vertical-align: middle;
+  cursor: pointer;
+
+  input {
+    opacity: 0;
+    position: absolute;
+  }
+
+  input + *:before {
+    content: '\2714';           /* Tick */
+    display: inline-block;
+    font-size: .8em;
+    width: 0.9em;
+    height: 0.9em;
+    line-height: .9em;
+    margin: 0 $picnic-margin * 2 0 0;
+    color: transparent;
+    background: $picnic-white;
+    border: $picnic-border;
+  }
+
+  input:focus + *:before, input:hover + *:before {
+    border-color: $picnic-aqua;
+  }
+}
+
+.radio input {
+  + *:before {
+    border-radius: 100em;
+    box-shadow: inset 0 0 0 3px $picnic-white;
+  }
+
+  &:checked + *:before {
+    background: $picnic-black;
+  }
+}
+
+.checkbox input {
+  + *:before {
+    border-radius: $checkbox-border-radius;
+    text-align: right;
+  }
+
+  &:checked + *:before {
+    color: $checkbox-color;
+  }
+}
