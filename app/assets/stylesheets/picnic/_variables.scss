@@ -37,8 +37,24 @@ $picnic-clear-overlay: rgba(255, 255, 255, .3) !default;
 
 // Body
 $body-color: $picnic-black !default;
+$body-background: transparent !default;
 $body-font-size: 1.1em !default;
 $body-line-height: 1.2 !default;
+
+// Nav
+$nav-background: $picnic-white !default;
+$nav-box-shadow: 0 0 .6em $picnic-dark-overlay !default;
+$nav-link-color: $picnic-black !default;
+$nav-link-font-size: 1em !default;
+$nav-link-padding: .5em .6em !default;
+$nav-transition: all .3s ease !default;
+$nav-width: 70% !default;
+$nav-z-index: 10 !default;
+
+$burger-color: $picnic-black !default;
+$burger-height: .8em !default;
+$burger-margin: .35em !default;
+$burger-width: .3em !default;
 
 /* Border */
 $picnic-border-color: $picnic-dull !default;
