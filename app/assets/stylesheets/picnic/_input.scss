@@ -21,7 +21,7 @@ input[type=file]:hover,
 input[type=color]:hover,
 input:invalid:focus,
 .select select:focus,
-.select select:hover {
+.select:hover {
   border-color: $input-focus-border-color;
   transition: $input-transition;
 

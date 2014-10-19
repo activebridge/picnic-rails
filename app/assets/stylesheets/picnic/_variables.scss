@@ -35,14 +35,39 @@ $picnic-dark-overlay: rgba(0, 0, 0, .3) !default;
 $picnic-soft-dark-overlay: rgba(0, 0, 0, .1) !default;
 $picnic-clear-overlay: rgba(255, 255, 255, .3) !default;
 
+// Body
+$body-color: $picnic-black !default;
+$body-font-size: 1.1em !default;
+$body-line-height: 1.2 !default;
+
 /* Border */
 $picnic-border-color: $picnic-dull !default;
 $picnic-border-weight: 1px !default;
 $picnic-border: $picnic-border-weight solid $picnic-border-color;
 
 // Link
-$link-color:            $picnic-primary !default;
-$link-text-decoration:  none !default;
+$link-color:                        $picnic-primary !default;
+$link-text-decoration:              none !default;
+
+// Button
+$button-font-size:                  1em !default;
+$button-height:                     $picnic-text-height !default;
+$button-text-decoration:            none !default;
+$button-background:                 $picnic-primary !default;
+$button-color:                      $picnic-white !default;
+$button-border-radius:              $picnic-radius !default;
+$button-cursor:                     pointer !default;
+$button-margin:                     $picnic-margin !default;
+$button-padding:                    $picnic-padding $picnic-padding * 3 !default;
+$button-transition:                 $picnic-transition-fast !default;
+$button-3d-padding:                 $picnic-padding $picnic-padding * 3 $picnic-padding + .2em !default;
+$button-3d-focus-padding:           $picnic-padding $picnic-padding * 3 $picnic-padding + .1em !default;
+$button-3d-shadow-color:            $picnic-soft-dark-overlay !default;
+$button-3d-active-padding:          $picnic-padding $picnic-padding * 3 !default;
+$button-success-background:         $picnic-success;
+$button-warning-background:         $picnic-warning;
+$button-error-background:           $picnic-error;
+$button-dull-background:            $picnic-dull;
 
 // Input
 $input-background:                  $picnic-white !default;
@@ -72,9 +97,32 @@ $select-margin:                     $picnic-margin !default;
 $select-padding:                    $picnic-padding !default;
 
 // Checkbox
+$checkbox-background:               $picnic-white !default;
+$checkbox-font-size:                .8em !default;
 $checkbox-border-color:             $picnic-border-color !default;
 $checkbox-border-radius:            $picnic-radius !default;
 $checkbox-border-weight:            $picnic-border-weight !default;
 $checkbox-border:                   $checkbox-border-weight solid $checkbox-border-color !default;
 $checkbox-color:                    $picnic-black;
 $checkbox-focus-border-color:       $picnic-aqua !default;
+$checkbox-margin:                   0 $picnic-margin * 2 0 0 !default;
+
+// Radio
+$radio-background:                  $picnic-white !default;
+$radio-font-size:                   .8em !default;
+$radio-border-color:                $picnic-border-color !default;
+$radio-border-radius:               50% !default;
+$radio-border-weight:               $picnic-border-weight !default;
+$radio-border:                      $checkbox-border-weight solid $checkbox-border-color !default;
+$radio-color:                       $picnic-black !default;
+$radio-body-weight:                 3px !default;
+$radio-focus-border-color:          $picnic-aqua !default;
+$radio-margin:                      0 $picnic-margin * 2 0 0 !default;
+
+// Table
+$table-text-align:                  left !default;
+$table-padding: $picnic-padding     2.4em $picnic-padding $picnic-padding * 2 !default;
+$table-head-font-weight:            bold !default;
+$table-head-color:                  $picnic-white !default;
+$table-head-background:             $picnic-primary !default;
+$table-even-background:             rgba(0, 0, 0, .1) !default;

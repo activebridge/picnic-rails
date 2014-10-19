@@ -2,113 +2,96 @@
 .button,
 a.button:visited,
 .toggle input + * {
-    user-select: none;
-    border: none;
-    box-sizing: content-box;
-    display: inline-block;
-    font-size: 1em;
-    height: $picnic-text-height;
-    line-height: $picnic-text-height;
-    text-decoration: none;
-    vertical-align: middle;
-    background: $picnic-primary;
-    color: $picnic-white;
-    border-radius: $picnic-radius;
-    cursor: pointer;
-    margin: $picnic-margin;
-    padding: $picnic-padding $picnic-padding * 3;
-    transition: $picnic-transition-fast;
+  user-select: none;
+  border: none;
+  box-sizing: content-box;
+  display: inline-block;
+  font-size: $button-font-size;
+  height: $button-height;
+  line-height: $button-height;
+  text-decoration: $button-text-decoration;
+  vertical-align: middle;
+  background: $button-background;
+  color: $button-color;
+  border-radius: $button-border-radius;
+  cursor: $button-cursor;
+  margin: $button-margin;
+  padding: $button-padding;
+  transition: $button-transition;
 
-    @if $picnic-deep == true {
-        height: $picnic-text-height - .2em;
-        line-height: $picnic-text-height;
-        padding: $picnic-padding $picnic-padding * 3 $picnic-padding + .2em;
-        margin: $picnic-margin $picnic-margin $picnic-margin;
-        box-shadow:
-          inset 0 0 0 100em transparent,
-          inset 0 -.2em $picnic-dark-overlay;
-    }
+  @if $picnic-deep == true {
+    height: $button-height - .2em;
+    padding: $button-3d-padding;
+    margin: $button-margin $button-margin $button-margin;
+    box-shadow: inset 0 0 0 100em transparent, inset 0 -.2em $button-3d-shadow-color;
+  }
 }
-
-
 
 /* Interactivity */
 .button:hover,
 .button:focus,
 .toggle:hover input + *,
 .toggle input:focus + * {
-    color: $picnic-white;
-    transition: all .1s ease, box-shadow 0s ease;
-    box-shadow: inset 0 0 0 100em $picnic-soft-dark-overlay;
+  color: $button-color;
 
-    @if $picnic-deep == true {
-        margin: $picnic-margin + .1em $picnic-margin $picnic-margin;
-        padding: $picnic-padding $picnic-padding * 3 $picnic-padding + .1em;
-        box-shadow:
-          inset 0 0 0 1000em $picnic-soft-dark-overlay,
-          inset 0 -.1em $picnic-dark-overlay;
-    }
+  @if $picnic-deep == true {
+    margin: $button-margin + .1em $button-margin $button-margin;
+    padding: $button-3d-focus-padding;
+    box-shadow: inset 0 0 0 1000em $button-3d-shadow-color, inset 0 -.1em $button-3d-shadow-color;
+  }
 }
 
 .button:active,
 .toggle input:active + *,
 .toggle input:checked + * {
-    box-shadow: inset 0 0 0 100em $picnic-dark-overlay;
+  box-shadow: inset 0 0 0 100em $button-3d-shadow-color;
 
-    @if $picnic-deep == true {
-        margin: $picnic-margin + .2em $picnic-margin $picnic-margin;
-        padding: $picnic-padding $picnic-padding * 3;
-        box-shadow:
-          inset 0 0 0 1000em $picnic-dark-overlay,
-          inset 0 .1em .1em $picnic-dark-overlay;
-    }
+  @if $picnic-deep == true {
+    margin: $button-margin + .2em $button-margin $button-margin;
+    padding: $button-3d-active-padding;
+    box-shadow: inset 0 0 0 1000em $button-3d-shadow-color, inset 0 .1em .1em $button-3d-shadow-color;
+  }
 }
-
-
 
 /* Toggle button */
 .toggle input {
-    opacity: 0;
-    z-index: -10;
-    position: absolute;
+  opacity: 0;
+  z-index: -10;
+  position: absolute;
 }
-
-
 
 /* Colors */
 .button.success,
 .button.success:visited,
 .toggle.success input + * {
-    background: $picnic-success;
+  background: $button-success-background;
 }
 
 .button.warning,
 a.button.warning:visited,
 .toggle.warning input + * {
-    background: $picnic-warning;
+  background: $button-warning-background;
 }
 
 .button.error,
 a.button.error:visited,
 .toggle.error input + * {
-    background: $picnic-error;
+  background: $button-error-background;
 }
 
 .button.dull,
 a.button.dull:visited,
 .toggle.dull input + * {
-    background: $picnic-dull;
+  background: $button-dull-background;
 }
-
-
 
 /* This allows for the invasiveness (default styling) */
 @if $picnic-invasive == true {
-    button,
-    input[type='submit'],
-    input[type='button'],
-    input[type='image'],
-    input[type='reset'] {
-        @extend .button;
-    }
+  button,
+  input[type='submit'],
+  input[type='button'],
+  input[type='image'],
+  input[type='reset'] {
+    @extend .button;
+  }
 }
