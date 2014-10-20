@@ -7,7 +7,6 @@
 
   &:after {
     color: $select-arrow-color;
-    padding: $select-padding 0 0 0;
     background: $select-background;
     content: '\25BC';
     display: block;
@@ -17,9 +16,11 @@
     bottom: 0;
     width: 1.5em;
     pointer-events: none;
-    font-size: .8em;
-    line-height: 2.3em;
+    font-size: $select-font-size - 2px;
+    line-height: 1;
+    text-align: center;
     border-radius: $select-border-radius;
+    padding-top: 14%;
   }
 
   select {
