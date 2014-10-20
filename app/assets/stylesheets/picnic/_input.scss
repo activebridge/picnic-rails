@@ -12,7 +12,7 @@ input, textarea {
 
 input[type=file],
 input[type=color] {
-  padding: $picnic-padding;
+  padding: $inputs-padding;
   cursor: pointer;
 }
 
@@ -25,8 +25,8 @@ input:invalid:focus,
   border-color: $input-focus-border-color;
   transition: $input-transition;
 
-  @if $picnic-deep == true {
-    box-shadow: .1em .1em 0 $picnic-dark-overlay;
+  @if $deep == true {
+    box-shadow: .1em .1em 0 $dark-overlay;
   }
 }
 

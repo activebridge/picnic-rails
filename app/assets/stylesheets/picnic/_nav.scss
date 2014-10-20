@@ -6,7 +6,7 @@ nav {
   background: $nav-background;
   box-shadow: $nav-box-shadow;
   z-index: $nav-z-index;
-  transition: all .3s ease;
+  transition: $nav-transition;
 
   a, a:visited {
     color: $nav-link-color;
@@ -18,8 +18,8 @@ nav {
   }
 
   a:hover {
-    color: $picnic-black;
-    box-shadow: inset 0 -.2em 0 #7fdbff;
+    color: $nav-link-hover-color;
+    box-shadow: $nav-link-hover-box-shadow;
   }
 
   .main, .menu { margin: 0 .5em; }
@@ -63,7 +63,7 @@ nav {
   display: none;
 }
 
-@media all and (max-width: $picnic-tablet-width) {
+@media all and (max-width: $tablet-width) {
   [class*='icon-']:before {
     display: inline-block;
   }
@@ -78,7 +78,7 @@ nav {
       line-height: 1.5em;
       padding-right: .5em;
       text-align: right;
-      transition: all .3s ease;
+      transition: $transition-slow;
       /* Avoid the burger menu to display while hiding */
       transition: display 0s ease .3s;
       &:before {
@@ -91,7 +91,7 @@ nav {
       right: 70%;
       width: 30%;
       height: 100%;
-      transition: all .3s ease;
+      transition: $transition-slow;
       background: rgba(255,255,255,.7);
 
       &:before {
@@ -114,7 +114,7 @@ nav {
     background: $nav-background;
     box-shadow: $nav-box-shadow;
     overflow: auto;
-    transition: all .3s ease;
+    transition: $transition-slow;
 
     a:not(.button) {
       display: block;

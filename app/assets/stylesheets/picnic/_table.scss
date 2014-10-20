@@ -13,19 +13,19 @@ th {
 }
 
 .success th {
-  background-color: $picnic-success;
+  background-color: $success;
 }
 
 .warning th {
-  background-color: $picnic-warning;
+  background-color: $warning;
 }
 
 .error th {
-  background-color: $picnic-error;
+  background-color: $error;
 }
 
 .dull th {
-  background-color: $picnic-dull;
+  background-color: $dull;
 }
 
 tr:nth-child(even) {
