@@ -23,6 +23,7 @@
       border: $radio-border;
       border-radius: $radio-border-radius;
       box-shadow: inset 0 0 0 $radio-body-weight $radio-background;
+      vertical-align: middle;
     }
 
     &:focus + *:before, &:hover + *:before {

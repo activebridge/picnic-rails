@@ -41,11 +41,12 @@ $transition-slow: all .3s ease;
 
 /* Default element styles */
 $inputs-border-radius:  .2em !default;
-$inputs-margin:         .3em !default;
+$inputs-margin:         .3em 0 !default;
 $inputs-padding:        .3em !default;
 $inputs-line-height:    1.5em !default;
 $inputs-border-color:   $dull !default;
 $inputs-border-weight:  1px !default;
+$inputs-font-size:      1em !default;
 $inputs-border:         $inputs-border-weight solid $inputs-border-color;
 
 // Body
@@ -75,6 +76,11 @@ $burger-width:  .3em !default;
 $link-color:           $primary !default;
 $link-text-decoration: none !default;
 
+// Label
+$label-font-size: 1em !default;
+$label-color: $black !default;
+$label-margin: $inputs-margin !default;
+
 // Button
 $button-font-size:          1em !default;
 $button-height:             $inputs-line-height !default;
@@ -103,6 +109,7 @@ $input-border-weight:               $inputs-border-weight !default;
 $input-border:                      $input-border-weight solid $input-border-color !default;
 $input-color:                       $black !default;
 $input-focus-border-color:          $aqua !default;
+$input-font-size:                   $inputs-font-size !default;
 $input-invalid-border-color:        $warning !default;
 $input-invalid-focus-border-color:  $error !default;
 $input-line-height:                 $inputs-line-height !default;
@@ -118,24 +125,24 @@ $select-border-radius: $inputs-border-radius !default;
 $select-border-weight: $inputs-border-weight !default;
 $select-border:        $select-border-weight solid $select-border-color !default;
 $select-color:         $black !default;
-$select-font-size:     16px !default;
+$select-font-size:     $inputs-font-size !default;
 $select-margin:        $inputs-margin !default;
 $select-padding:       $inputs-padding !default;
 
 // Checkbox
 $checkbox-background:         $white !default;
-$checkbox-font-size:          .8em !default;
+$checkbox-font-size:          14px !default;
 $checkbox-border-color:       $inputs-border-color !default;
 $checkbox-border-radius:      $inputs-border-radius !default;
 $checkbox-border-weight:      $inputs-border-weight !default;
 $checkbox-border:             $checkbox-border-weight solid $checkbox-border-color !default;
 $checkbox-color:              $black;
 $checkbox-focus-border-color: $aqua !default;
-$checkbox-margin:             0 $inputs-margin * 2 0 0 !default;
+$checkbox-margin:             0 .5em 0 0 !default;
 
 // Radio
 $radio-background:         $white !default;
-$radio-font-size:          .8em !default;
+$radio-font-size:          14px !default;
 $radio-border-color:       $inputs-border-color !default;
 $radio-border-radius:      50% !default;
 $radio-border-weight:      $inputs-border-weight !default;
@@ -143,7 +150,7 @@ $radio-border:             $checkbox-border-weight solid $checkbox-border-color 
 $radio-color:              $black !default;
 $radio-body-weight:        3px !default;
 $radio-focus-border-color: $aqua !default;
-$radio-margin:             0 $inputs-margin * 2 0 0 !default;
+$radio-margin:             0 .5em 0 0 !default;
 
 // Table
 $table-text-align:       left !default;

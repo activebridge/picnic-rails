@@ -4,6 +4,22 @@
   border: $select-border;
   border-radius: $select-border-radius;
   margin: $select-margin;
+  font-size: $select-font-size;
+  min-width: 50px;
+
+  &:before {
+    color: $select-arrow-color;
+    background: $select-background;
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1.5em;
+    pointer-events: none;
+    border-radius: $select-border-radius;
+  }
 
   &:after {
     color: $select-arrow-color;
@@ -12,15 +28,12 @@
     display: block;
     position: absolute;
     right: 0;
-    top: 0;
-    bottom: 0;
-    width: 1.5em;
+    top: 26%;
+    width: 2em;
     pointer-events: none;
-    font-size: $select-font-size - 2px;
-    line-height: 1;
+    font-size: 0.8em;
     text-align: center;
     border-radius: $select-border-radius;
-    padding-top: 14%;
   }
 
   select {
@@ -33,7 +46,7 @@
     border-radius: $select-border-radius;
     cursor: pointer;
     font-size: $select-font-size;
-    min-width: 50px;
+    width: 100%;
 
     &:-moz-focusring {
       color: transparent;

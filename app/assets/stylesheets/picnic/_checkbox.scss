@@ -23,6 +23,7 @@
       border: $checkbox-border;
       border-radius: $checkbox-border-radius;
       text-align: right;
+      vertical-align: middle;
     }
 
     &:focus + *:before, &:hover + *:before {
