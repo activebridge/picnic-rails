@@ -14,15 +14,15 @@
       content: '\2714';           /* Tick */
       display: inline-block;
       font-size: $checkbox-font-size;
-      width: 0.9em;
-      height: 0.9em;
-      line-height: .9em;
+      width: 1em;
+      height: 1em;
+      line-height: 1.1em;
       margin: $checkbox-margin;
       color: transparent;
       background: $checkbox-background;
       border: $checkbox-border;
       border-radius: $checkbox-border-radius;
-      text-align: right;
+      text-align: center;
       vertical-align: middle;
     }
 

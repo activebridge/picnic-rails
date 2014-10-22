@@ -37,7 +37,8 @@
   }
 
   select {
-    padding: $select-padding 1.5em $select-padding $select-padding;
+    padding: $select-padding .4em $select-padding $select-padding;
+    margin-right: 1em;
     background: none;
     -moz-appearance: none;
     -webkit-appearance: none;
