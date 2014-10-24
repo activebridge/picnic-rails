@@ -20,7 +20,9 @@
       margin: $checkbox-margin;
       color: transparent;
       background: $checkbox-background;
-      border: $checkbox-border;
+      border-color: $checkbox-border-color;
+      border-style: $checkbox-border-style;
+      border-width: $checkbox-border-width;
       border-radius: $checkbox-border-radius;
       text-align: center;
       vertical-align: middle;

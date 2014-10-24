@@ -1,7 +1,9 @@
 .select {
   position: relative;
   display: inline-block;
-  border: $select-border;
+  border-color: $select-border-color;
+  border-style: $select-border-style;
+  border-width: $select-border-width;
   border-radius: $select-border-radius;
   margin: $select-margin;
   font-size: $select-font-size;
