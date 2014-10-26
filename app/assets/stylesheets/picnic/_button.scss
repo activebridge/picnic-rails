@@ -18,13 +18,7 @@ a.button:visited,
   margin: $button-margin;
   padding: $button-padding;
   transition: $button-transition;
-
-  @if $deep == true {
-    height: $button-height - .2em;
-    padding: $button-3d-padding;
-    margin: $button-margin $button-margin $button-margin;
-    box-shadow: inset 0 0 0 100em transparent, inset 0 -.2em $button-3d-shadow-color;
-  }
+  box-shadow: $button-box-shadow;
 }
 
 /* Interactivity */
@@ -32,25 +26,14 @@ a.button:visited,
 .button:focus,
 .toggle:hover input + *,
 .toggle input:focus + * {
-  color: $button-color;
-
-  @if $deep == true {
-    margin: $button-margin + .1em $button-margin $button-margin;
-    padding: $button-3d-focus-padding;
-    box-shadow: inset 0 0 0 1000em $button-3d-shadow-color, inset 0 -.1em $button-3d-shadow-color;
-  }
+  box-shadow: $button-hover-box-shadow;
+  color: $button-hover-color;
 }
 
 .button:active,
 .toggle input:active + *,
 .toggle input:checked + * {
-  box-shadow: inset 0 0 0 100em $button-3d-shadow-color;
-
-  @if $deep == true {
-    margin: $button-margin + .2em $button-margin $button-margin;
-    padding: $button-3d-active-padding;
-    box-shadow: inset 0 0 0 1000em $button-3d-shadow-color, inset 0 .1em .1em $button-3d-shadow-color;
-  }
+  box-shadow: $button-active-box-shadow;
 }
 
 /* Toggle button */
