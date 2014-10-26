@@ -20,16 +20,10 @@ input[type=color] {
 input:focus, textarea:focus,
 input[type=file]:hover,
 input[type=color]:hover,
-input:invalid:focus,
-.select select:focus,
-.select:hover {
+input:invalid:focus {
   border-color: $input-focus-border-color;
   border-width: $input-focus-border-width;
   padding: $input-focus-padding;
-
-  @if $deep == true {
-    box-shadow: .1em .1em 0 $dark-overlay;
-  }
 }
 
 /* Validation */

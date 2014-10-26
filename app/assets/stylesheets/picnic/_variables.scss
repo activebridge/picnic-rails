@@ -2,9 +2,6 @@
 // Not fully implemented
 $invasive: true !default;
 
-// Make buttons and other things slightly 3d
-$deep: true !default;
-
 // Media query breakpoints
 $tablet-width: 750px !default;
 $laptop-width: 1200px !default;
@@ -40,14 +37,18 @@ $transition-fast: all .1s ease;
 $transition-slow: all .3s ease;
 
 /* Default element styles */
-$inputs-border-radius:  .2em !default;
-$inputs-margin:         .3em 0 !default;
-$inputs-padding:        .3em !default;
-$inputs-line-height:    1.5em !default;
-$inputs-border-color:   $dull !default;
-$inputs-border-width:  1px !default;
-$inputs-border-style:   solid !default;
-$inputs-font-size:      1em !default;
+$inputs-color:              $black;
+$inputs-border-radius:      .2em !default;
+$inputs-margin:             .3em 0 !default;
+$inputs-padding:            .3em !default;
+$inputs-line-height:        1.5em !default;
+$inputs-border-color:       $dull !default;
+$inputs-border-width:       1px !default;
+$inputs-border-style:       solid !default;
+$inputs-font-size:          1em !default;
+$inputs-box-shadow:         .1em .1em 0 $dark-overlay !default;
+$inputs-background:         $white !default;
+$inputs-focus-border-color: $aqua !default;
 
 // Body
 $body-color:        $black !default;
@@ -103,13 +104,14 @@ $button-error-background:   $error;
 $button-dull-background:    $dull;
 
 // Input
-$input-background:                  $white !default;
+$input-box-shadow:                  $inputs-box-shadow !default;
+$input-background:                  $inputs-background !default;
 $input-border-color:                $inputs-border-color !default;
 $input-border-radius:               $inputs-border-radius !default;
 $input-border-width:                $inputs-border-width !default;
 $input-border-style:                $inputs-border-style !default;
-$input-color:                       $black !default;
-$input-focus-border-color:          $aqua !default;
+$input-color:                       $inputs-color !default;
+$input-focus-border-color:          $inputs-focus-border-color !default;
 $input-focus-border-width:          $input-border-width !default;
 $input-focus-width:                 $input-border-width !default;
 $input-padding:                     $inputs-padding !default;
@@ -122,16 +124,19 @@ $input-margin:                      $inputs-margin !default;
 $input-transition:                  border-color .3s !default;
 
 // Select
-$select-arrow-color:   $black !default;
-$select-background:    $white !default;
-$select-border-color:  $inputs-border-color !default;
-$select-border-radius: $inputs-border-radius !default;
-$select-border-width:  $inputs-border-width !default;
-$select-border-style:  $inputs-border-style !default;
-$select-color:         $black !default;
-$select-font-size:     $inputs-font-size !default;
-$select-margin:        $inputs-margin !default;
-$select-padding:       $inputs-padding !default;
+$select-background:         $inputs-background !default;
+$select-border-color:       $inputs-border-color !default;
+$select-border-radius:      $inputs-border-radius !default;
+$select-border-width:       $inputs-border-width !default;
+$select-border-style:       $inputs-border-style !default;
+$select-color:              $inputs-color !default;
+$select-arrow-color:        $select-color !default;
+$select-font-size:          $inputs-font-size !default;
+$select-margin:             $inputs-margin !default;
+$select-padding:            $inputs-padding !default;
+$select-focus-border-color: $inputs-focus-border-color !default;
+$select-focus-border-width: $select-border-width !default;
+$select-focus-padding:      $select-padding !default;
 
 // Checkbox
 $checkbox-background:         $white !default;

@@ -60,4 +60,12 @@
       padding: .2em .5em;
     }
   }
+
+  &:hover {
+    border-color: $select-focus-border-color;
+    border-width: $select-focus-border-width;
+    select {
+      padding: $select-focus-padding .4em $select-focus-padding $select-focus-padding;
+    }
+  }
 }
