@@ -22,7 +22,7 @@ gem 'autoprefixer-rails'
 Import Picnic styles in `app/assets/stylesheets/application.css.scss`:
 
 ```scss
-@import 'picinc';
+@import 'picnic';
 ```
 
 Make sure the file has `.css.scss` extension (or `.css.sass` for Sass syntax). If you have just generated a new Rails app,
@@ -32,15 +32,15 @@ it may come with a `.css` file instead. If this file exists, it will be served i
 $ rm app/assets/stylesheets/application.css
 ```
 
-Do not use `//= require` in Sass or your other stylesheets will not be [able to access][antirequire] the Picinc variables.
+Do not use `//= require` in Sass or your other stylesheets will not be [able to access][antirequire] the Picnic variables.
 
 
 * You can include all modules separately. List of all available modules is [here](/app/assets/stylesheets/picnic.scss). It is required to include `variables` first.
 
 ```scss
-@import 'picinc/variables';
-@import 'picinc/checkbox';
-@import 'picinc/select';
+@import 'picnic/variables';
+@import 'picnic/checkbox';
+@import 'picnic/select';
 ```
 
 ### Configuration
@@ -57,7 +57,7 @@ Using [Autoprefixer][autoprefixer] with Picnic is recommended.
 
 ### Sass
 
-The full list of Picinc variables can be found [here](/app/assets/stylesheets/picnic/_variables.scss). You can override these by simply redefining the variable before the `@import` directive, e.g.:
+The full list of Picnic variables can be found [here](/app/assets/stylesheets/picnic/_variables.scss). You can override these by simply redefining the variable before the `@import` directive, e.g.:
 
 ```scss
 $picnic-deep: true;
@@ -65,10 +65,10 @@ $picnic-tablet-width: 750px;
 $picnic-laptop-width: 1200px;
 $picnic-success: green;
 
-@import 'picinc';
+@import 'picnic';
 ```
 
 ## You're in good company
 
-[picinc](https://github.com/picnicss/picnic)
+[picnic](https://github.com/picnicss/picnic)
 [autoprefixer](https://github.com/ai/autoprefixer)
